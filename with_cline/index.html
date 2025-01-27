@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- og태그 위치 -->
+    <meta property="og:title" content="Alan Turing" />
+    <meta
+      property="og:description"
+      content="Alan Turing was a mathematician and the father of modern computing."
+    />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg"
+    />
+
+    <!-- Favicon 위치 -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+
+    <!-- Webfont 추가 위치 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>앨런 튜링 - 컴퓨터 과학의 아버지</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        padding-top: 60px; /* Adjust body padding to account for fixed navbar */
+      }
+      .jumbotron {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg"); /* Placeholder image */
+        background-size: cover;
+        color: white;
+        min-height: 500px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <html>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">앨런 튜링</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contributions">기여</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#legacy">유산</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">앨런 튜링</h1>
+        <p class="lead">컴퓨터 과학과 인공지능의 아버지</p>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>앨런 튜링에 대하여</h2>
+          <p>
+            앨런 매티슨 튜링 (1912-1954)은 영국의 수학자, 컴퓨터 과학자,
+            논리학자, 암호 해독가, 철학자, 그리고 이론 생물학자였습니다. 그는
+            이론 컴퓨터 과학의 발전에 큰 영향을 미쳤으며, 튜링 기계를 통해
+            알고리즘과 계산의 개념을 형식화하여 범용 컴퓨터의 모델로 간주될 수
+            있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contributions Section -->
+    <section id="contributions" class="container mt-5">
+      <h2>주요 기여</h2>
+      <div class="row">
+        <!-- Turing Machine Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://blog.kakaocdn.net/dn/oO438/btqMGN2cFpa/RHASKXrrDbiCPjxO5plRqK/img.jpg"
+              class="card-img-top"
+              alt="Turing Machine"
+            />
+            <div class="card-body">
+              <h5 class="card-title">튜링 기계</h5>
+              <p class="card-text">
+                규칙 표에 따라 무한한 테이프 위에서 기호를 조작하는 이론적
+                장치인 튜링 기계를 개념화했습니다.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#turingMachineModal"
+                >더 알아보기</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Enigma Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="card-img-top"
+              alt="Enigma Machine"
+            />
+            <div class="card-body">
+              <h5 class="card-title">에니그마 해독</h5>
+              <p class="card-text">
+                제2차 세계 대전 중 독일 에니그마 코드를 해독하는 데 중요한
+                역할을 했으며, 연합군의 승리에 크게 기여했습니다.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#enigmaModal"
+                >더 알아보기</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Turing Test Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://blog.kakaocdn.net/dn/dCCGqb/btqS1Wj8JkH/xK2YuZT6iOnK92KJGXHjek/img.png"
+              class="card-img-top"
+              alt="Turing Test"
+            />
+            <div class="card-body">
+              <h5 class="card-title">튜링 테스트</h5>
+              <p class="card-text">
+                기계가 인간과 동등하거나 구별할 수 없는 지능적 행동을 보이는
+                능력을 테스트하는 튜링 테스트를 제안했습니다.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#turingTestModal"
+                >더 알아보기</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legacy Section -->
+    <section id="legacy" class="container mt-5">
+      <h2>유산</h2>
+      <p>
+        앨런 튜링의 업적은 현대 컴퓨터 과학과 인공지능의 기초를 놓았습니다. 그의
+        기여는 컴퓨터 과학 분야의 최고 영예인 튜링 상을 통해 매년 기념되고
+        있습니다.
+      </p>
+    </section>
+
+    <!-- Modals -->
+    <!-- Turing Machine Modal -->
+    <div
+      class="modal fade"
+      id="turingMachineModal"
+      tabindex="-1"
+      aria-labelledby="turingMachineModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="turingMachineModalLabel">튜링 기계</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="닫기"
+            ></button>
+          </div>
+          <div class="modal-body">
+            튜링 기계는 규칙 표에 따라 무한한 테이프 위에서 기호를 조작하는 추상
+            기계를 정의하는 계산의 수학적 모델입니다. 그 단순함에도 불구하고,
+            튜링 기계는 모든 컴퓨터 알고리즘의 논리를 시뮬레이션하는 데 적용될
+            수 있습니다.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enigma Modal -->
+    <div
+      class="modal fade"
+      id="enigmaModal"
+      tabindex="-1"
+      aria-labelledby="enigmaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enigmaModalLabel">에니그마 해독</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="닫기"
+            ></button>
+          </div>
+          <div class="modal-body">
+            제2차 세계 대전 중, 앨런 튜링은 영국의 암호 해독 센터인 블레츨리
+            파크에서 일했습니다. 그는 독일의 에니그마 코드를 해독하는 데
+            중추적인 역할을 했습니다. 튜링은 에니그마 기계의 설정을 찾을 수 있는
+            전자 기계 장치인 봄베를 설계하여 독일 메시지 해독 과정을 크게
+            가속화했습니다.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Turing Test Modal -->
+    <div
+      class="modal fade"
+      id="turingTestModal"
+      tabindex="-1"
+      aria-labelledby="turingTestModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="turingTestModalLabel">튜링 테스트</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="닫기"
+            ></button>
+          </div>
+          <div class="modal-body">
+            1950년 앨런 튜링이 개발한 튜링 테스트는 기계가 인간과 동등하거나
+            구별할 수 없는 지능적 행동을 보이는 능력을 테스트하는 것입니다. 이
+            테스트에서 인간 평가자는 인간과 기계와 자연어 대화를 나누며, 각각은
+            인간처럼 보이려고 합니다. 평가자가 기계를 인간과 확실하게 구별할 수
+            없다면, 기계는 튜링 테스트를 통과했다고 말합니다.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </html>
+</html>
