@@ -8,3 +8,4 @@
 | [bootstrap](https://taehyun32.github.io/programmers-AIBE1/bootstrap/)                    | https://taehyun32.github.io/programmers-AIBE1/bootstrap/                |
 | [with_cline](https://taehyun32.github.io/programmers-AIBE1/with_cline/)                  | https://taehyun32.github.io/programmers-AIBE1/with_cline/               |
 | [lucky_lunch](https://taehyun32.github.io/programmers-AIBE1/lucky_lunch/)                | https://taehyun32.github.io/programmers-AIBE1/lucky_lunch/              |
+| [supabase](https://taehyun32.github.io/programmers-AIBE1/supabase/)                      | https://taehyun32.github.io/programmers-AIBE1/supabase/                 |
